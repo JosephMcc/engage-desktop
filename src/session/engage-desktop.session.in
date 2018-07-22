@@ -1,0 +1,4 @@
+[GNOME Session]
+Name=Engage Desktop
+RequiredComponents=@SESSION_COMPONENTS@
+DesktopName=Engage Desktop

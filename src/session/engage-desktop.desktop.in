@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Engage Desktop
+Comment=This session logs you into the Engage Desktop
+Exec=@prefix@/bin/engage-desktop
+TryExec=@prefix@/bin/engage-desktop
+Icon=
+Type=Application
+DesktopNames=Engage;GNOME

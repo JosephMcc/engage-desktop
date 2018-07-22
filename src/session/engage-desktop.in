@@ -1,0 +1,16 @@
+#!/bin/sh
+
+ENGAGE_VERSION="@PACKAGE_VERSION@"
+
+if [ "$1" = "--version" ]; then
+    echo "engage-desktop $ENGAGE_VERSION"
+    echo "Copyright © 2018 JosephMcc"
+    exit 0
+fi
+
+if [ -z $XDG_CURRENT_DESKTOP ]; then
+  XDG_CURRENT_DESKTOP=Engage:GNOME
+  export XDG_CURRENT_DESKTOP
+fi
+
+exec gnome-session --session=engage-desktop $*
